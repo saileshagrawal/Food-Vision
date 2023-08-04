@@ -2,7 +2,7 @@ import streamlit as st
 import tensorflow as tf
 import pandas as pd
 import altair as alt
-from .utils import load_and_prep, get_classes
+from utils import load_and_prep, get_classes
 
 @st.cache(suppress_st_warning=True)
 def predicting(image, model):
@@ -47,7 +47,7 @@ It is based upom a pre-trained Image Classification Model that comes with Keras 
 
 st.title("Food Vision 🍔📷")
 st.header("Identify what's in your food photos!")
-st.write("To know more about this app, visit [**GitHub**](https://github.com/saileshagrawal/Food-Vision)")
+st.write("To know more about this app, visit [**GitHub**](https://github.com/gauravreddy08/food-vision)")
 file = st.file_uploader(label="Upload an image of food.",
                         type=["jpg", "jpeg", "png"])
 
